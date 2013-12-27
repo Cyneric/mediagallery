@@ -16,11 +16,11 @@ article, aside, details, figcaption, figure,
 
 	html{
 		min-height:				100%;
-		background-size:		cover;
 		background-color:		black;
-		background-image:		url("../images/background.jpg");
-		background-position:	left bottom;
-		background-repeat:		no-repeat;
+		background-image: 		-webkit-linear-gradient(#FFFFFF 0%, #085469 100%); 
+		background-image: 		-moz-linear-gradient(#FFFFFF 0%, #085469 100%); 
+		background-image: 		-o-linear-gradient(#FFFFFF 0%, #085469 100%); 
+		background-image: 		linear-gradient(#FFFFFF 0%, #085469 100%);
 	}
 		
 	body {

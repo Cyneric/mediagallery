@@ -15,11 +15,8 @@
 <body>
 	<div id="content">
 		<header>
-			<img src="images/logo.png" alt="Mediagallery" style="max-width:50%">
+			<a href="index.php"><img src="images/logo.png" alt="Mediagallery" style="max-width:50%"></a>
 		</header>
-		
-			<div class="popover top" style="top: 55%; left: 80%; display: block;"><div class="arrow"></div><h3 class="popover-title">Login</h3><div class="popover-content">Please login to explore files.</div></div>
-		
 		
 		<nav>
 			 <ul class="nav nav-pills nav-stacked">
