@@ -1,14 +1,42 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>MediaGallery</title>
-<link rel="stylesheet" type="text/css" href="css/style.css" />
+﻿<!DOCTYPE html>				
+<html lang="de">															
+<head>		
+	<meta charset="utf-8"> 	
+	<title>Mediagallery</title>	
+	<meta name="description" content="Upload and share impressions with Mediagallery">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="shortcut icon" href="images/favicon.png" type="image/png" />
+	<link rel="icon" href="images/favicon.png" type="image/png" />
 </head>
+
 <body>
-<div id="header" width=100% height=auto >
-<div id="logo"><img src="images/logo.png" alt="MediaGallery" style="max-width:50%;"></div>
-</div>
-<div id="navigation">Bilder<div>
+	<div id="content">
+		<header>
+			<img src="images/logo.png" alt="Mediagallery" style="max-width:50%">
+		</header>
+		
+		<nav>
+		</nav>
+	
+		<div id="login">
+		    <div class="input-group margin-bottom-sm">
+		        <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+		        <input class="form-control" type="text" placeholder="Email address">
+		    </div>
+		    <div class="input-group">
+		        <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+		         <input class="form-control" type="password" placeholder="Password">
+		    </div>
+	    </div>	 
+
+		<footer>
+			<small>
+				Copyright &copy;
+				<time datetime="2013">2013</time>
+				Mediagallery	
+			</small>
+		</footer>
+	</div>
 </body>
-</html>
+</html>​
