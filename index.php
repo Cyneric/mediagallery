@@ -5,6 +5,8 @@
 	<title>Mediagallery</title>	
 	<meta name="description" content="Upload and share impressions with Mediagallery">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	<script src="js/jquery-1.10.2.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="shortcut icon" href="images/favicon.png" type="image/png" />
 	<link rel="icon" href="images/favicon.png" type="image/png" />
