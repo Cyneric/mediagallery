@@ -5,7 +5,7 @@
 	<title>Mediagallery</title>	
 	<meta name="description" content="Upload and share impressions with Mediagallery">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 	<script src="js/jquery-1.10.2.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="shortcut icon" href="images/favicon.png" type="image/png" />
@@ -17,6 +17,9 @@
 		<header>
 			<img src="images/logo.png" alt="Mediagallery" style="max-width:50%">
 		</header>
+		
+			<div class="popover top" style="top: 30%; left: 80%; display: block;"><div class="arrow"></div><h3 class="popover-title">Login</h3><div class="popover-content">Please login to explore files.</div></div>
+		
 		
 		<nav>
 		</nav>
