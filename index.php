@@ -26,7 +26,7 @@
 				<li><a href="#"><i class="fa fa-cogs fa-fw"></i> Settings</a></li>
 			</ul>
 		</nav>
-	
+
 		<div id="login">
 		    <div class="input-group margin-bottom-sm">
 		        <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>

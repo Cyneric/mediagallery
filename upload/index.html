@@ -1,0 +1,110 @@
+<html>
+<head>
+<script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+
+<script type="text/javascript">
+
+$(function() {
+
+// Formular abschicken
+
+$('#uploadForm').submit(function(data) {
+
+// Ajax Loader anzeigen
+
+$('#loader').html('L&auml;dt...<br/><img src="ajax-loader.gif" border="0"/>');
+
+// Formular Elemente verstecken
+
+$('#inputs').hide();
+
+// abschickendes Formular angeben
+
+var submittingForm = $('#uploadForm');
+
+// eindeutigen iFrame Namen generieren
+
+var frameName = ("upload" + (new Date()).getTime());
+
+// iFrame setzen
+
+var uploadFrame = $('<iframe name="' + frameName + '"></iframe>');
+
+// iFrame verstecken
+
+uploadFrame.css("display", "none");
+
+// iFrame Inhalt laden
+
+uploadFrame.load(function(data) {
+
+// Timeout festlegen
+
+setTimeout(function() {
+
+// Rueckgabewert abfragen
+
+$('#dateiname').val(uploadFrame.contents().find('#result').html());
+
+// iFrame entfernen
+
+uploadFrame.remove();
+
+// Formular Elemente anzeigen
+
+$('#inputs').show();
+
+// Ajax Loader verstecken
+
+$('#loader').hide();
+
+}, 1000);
+
+});
+
+// iFrame zum Body hinzufuegen
+
+$('body:first').append(uploadFrame);
+
+// Formular target zum iFrame setzen
+
+submittingForm.attr('target', frameName);
+
+});
+
+$('#upload').click(function() {
+
+// Formular abschicken
+
+$('#uploadForm').submit();
+
+});
+
+});
+
+</script>
+
+</head>
+
+
+
+
+<body>
+<table border="0">
+<tr>
+<td valign="top">Dateiname:</td>
+<td>
+<form action="upload_event.php" method="post" enctype="multipart/form-data" id="uploadForm">
+<input type="text" name="dateiname" value="" id="dateiname" style="width: 400px;"/>
+<br/>
+<div id="hide"><input type="file" name="pdf"></input><input type="button" name="upload" value="Hochladen" id="upload"/></div></form>
+<div id="loader"></div>
+</td>
+</tr>
+</table>
+</body>
+
+
+</html>
+
+<!-- http://www.webchef.de/ajax-file-upload-mit-jquery/ -->
