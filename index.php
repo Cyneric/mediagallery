@@ -18,10 +18,16 @@
 			<img src="images/logo.png" alt="Mediagallery" style="max-width:50%">
 		</header>
 		
-			<div class="popover top" style="top: 30%; left: 80%; display: block;"><div class="arrow"></div><h3 class="popover-title">Login</h3><div class="popover-content">Please login to explore files.</div></div>
+			<div class="popover top" style="top: 55%; left: 80%; display: block;"><div class="arrow"></div><h3 class="popover-title">Login</h3><div class="popover-content">Please login to explore files.</div></div>
 		
 		
 		<nav>
+			 <ul class="nav nav-pills nav-stacked">
+				<li class="active"><a href="#"><i class="fa fa-home fa-fw"></i> Home</a></li>
+				<li><a href="#"><i class="fa fa-upload fa-fw"></i> Upload</a></li>
+				<li><a href="#"><i class="fa fa-pencil fa-fw"></i> Applications</a></li>
+				<li><a href="#"><i class="fa fa-cogs fa-fw"></i> Settings</a></li>
+			</ul>
 		</nav>
 	
 		<div id="login">
@@ -35,6 +41,11 @@
 		    </div>
 	    </div>	 
 
+		<div id="social">
+			<a href="#"><i class="fa fa-facebook fa-lg"></i></a>&nbsp;&nbsp;
+			<a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+		</div>
+		
 		<footer>
 			<small>
 				Copyright &copy;
