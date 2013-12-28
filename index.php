@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>				
 <html lang="de">															
 <head>		
-	<meta charset="utf-8"> 	
+	<meta charset="utf-8">
 	<title>Mediagallery</title>	
 	<meta name="description" content="Upload and share impressions with Mediagallery">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
