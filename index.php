@@ -12,7 +12,7 @@
 	<link rel="icon" href="images/favicon.png" type="image/png" />
 </head>
 
-<body>
+<body> 
 	<div id="content">
 		<header>
 			<a href="index.php"><img src="images/logo.png" alt="Mediagallery" style="max-width:50%"></a>
