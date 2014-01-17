@@ -5,15 +5,15 @@
 	<title>Mediagallery</title>	
 	<meta name="description" content="Upload and share impressions with Mediagallery">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="shortcut icon" href="images/favicon.png" type="image/png" />
 	<link rel="icon" href="images/favicon.png" type="image/png" />
 </head>
 
 <body>
-	<div id="content">
+	<div id="content" style="margin-top:10%;">
 		<header>
 			<a href="index.php"><img src="images/logo.png" alt="Mediagallery" style="max-width:50%"></a>
 		</header>
@@ -21,7 +21,7 @@
 		<nav>
 			 <ul class="nav nav-pills nav-stacked">
 				<li class="active"><a href="#"><i class="fa fa-home fa-fw"></i> Home</a></li>
-				<li><a href="#"><i class="fa fa-upload fa-fw"></i> Upload</a></li>
+				<li><a href="upload"><i class="fa fa-upload fa-fw"></i> Upload</a></li>
 				<li><a href="#"><i class="fa fa-pencil fa-fw"></i> Applications</a></li>
 				<li><a href="#"><i class="fa fa-cogs fa-fw"></i> Settings</a></li>
 			</ul>
