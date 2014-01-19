@@ -13,7 +13,7 @@
 </head>
 
 <body>
-	<div id="content" style="margin-top:10%;">
+	<div id="content">
 		<header>
 			<a href="index.php"><img src="images/logo.png" alt="Mediagallery" style="max-width:50%"></a>
 		</header>
@@ -21,22 +21,32 @@
 		<nav>
 			 <ul class="nav nav-pills nav-stacked">
 				<li class="active"><a href="#"><i class="fa fa-home fa-fw"></i> Home</a></li>
-				<li><a href="upload"><i class="fa fa-upload fa-fw"></i> Upload</a></li>
+				<li><a href="upload.php"><i class="fa fa-upload fa-fw"></i> Upload</a></li>
 				<li><a href="#"><i class="fa fa-pencil fa-fw"></i> Applications</a></li>
 				<li><a href="#"><i class="fa fa-cogs fa-fw"></i> Settings</a></li>
 			</ul>
 		</nav>
-
-		<div id="login">
-		    <div class="input-group margin-bottom-sm">
-		        <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
-		        <input class="form-control" type="text" placeholder="Email address">
-		    </div>
-		    <div class="input-group">
-		        <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
-		         <input class="form-control" type="password" placeholder="Password">
-		    </div>
-	    </div>	 
+		<hr>
+		<br>
+		<div id="media">
+			<?php
+				$con=mysqli_connect("localhost","root","root","mediagallery");
+				// Check connection
+				if (mysqli_connect_errno()){
+					echo "Failed to connect to MySQL: " . mysqli_connect_error();
+				}
+				
+				$result = mysqli_query($con,"SELECT * FROM uploads");
+				mysqli_close($con);
+				
+				
+				while($row = mysqli_fetch_array($result))
+				{
+					echo "<a href='upload/".$row['src']."'><img class='imgsrc' src='upload/".$row['src']."'></a>";
+					//echo "<p align='center'>Uploaded: ".$row['date']."</p><br><br>";
+				}
+			?>
+		</div>
 
 		<div id="social">
 			<a href="#"><i class="fa fa-facebook fa-lg"></i></a>&nbsp;&nbsp;

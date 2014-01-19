@@ -21,6 +21,8 @@ article, aside, details, figcaption, figure,
 		background-image: 		-moz-linear-gradient(#FFFFFF 0%, #085469 100%); 
 		background-image: 		-o-linear-gradient(#FFFFFF 0%, #085469 100%); 
 		background-image: 		linear-gradient(#FFFFFF 0%, #085469 100%);
+		background-repeat: 		no-repeat;
+		background-attachment: 	fixed;
 	}
 		
 	body {
@@ -60,11 +62,6 @@ article, aside, details, figcaption, figure,
 		color:					grey; 
 		padding:				5px;
  	} 
- 	
-	#login{
-		margin-top:				5%;
-		margin-bottom:			5%;
-	}
 	 
 	#social{
 		position:				absolute;
@@ -78,4 +75,10 @@ article, aside, details, figcaption, figure,
 		padding:				5px;
  	}  
 	 
+	.imgsrc{
+		width:					20%;
+		float:					left;
+		margin-left:			2%;
+		margin-bottom:			2%;
+	} 
 	 
