@@ -27,7 +27,7 @@
 			</ul>
 		</nav>
 		<hr>
-		<br>
+		
 		<div id="media">
 			<?php
 				$con=mysqli_connect("localhost","root","root","mediagallery");
@@ -47,7 +47,7 @@
 				}
 			?>
 		</div>
-
+		
 		<div id="social">
 			<a href="#"><i class="fa fa-facebook fa-lg"></i></a>&nbsp;&nbsp;
 			<a href="#"><i class="fa fa-twitter fa-lg"></i></a>
